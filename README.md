@@ -1,7 +1,7 @@
 # Colorful-PHP
 
 ## Preface
-在写[Nold文档示例生成小工具](https://github.com/yinggaozhen/nold)以及的时候，想要加入一个Console Helper类用于界面友好的命令行输出展示，其中需要对输出的文档进行适当美化。虽然这个东西并不复杂，但是考虑到这个可集成到目前自己所写绝大部分的工具或者框架(譬如现在正在写的Nold文档生成小工具以及Zaor)，所以便单独抽出来花了点时间写一下.
+在写[Nold文档示例生成小工具](https://github.com/yinggaozhen/nold)的时候，想要加入Console用于界面友好的命令行输出展示，其中需要Console需要对输出的文档进行适当美化。考虑到这个可集成到目前自己所写绝大部分的工具或者框架(譬如现在正在写的Nold文档生成小工具以及Zaor)，所以便单独抽出来,便于今后其他工具或者框架可以使用.虽然网上类似的小插件也不少，不过想到这个轮子还是比较小的，所以干脆自己花点业余时间写一个好了.
 
 ## Application
 Let's console to be Colorful~:satisfied:
