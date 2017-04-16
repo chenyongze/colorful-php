@@ -3,8 +3,20 @@ namespace colorful\decorator;
 
 use colorful\Decorator;
 
+/**
+ * <边框>装饰主题
+ *
+ * Class Frame
+ * @package colorful\decorator
+ */
 class Frame extends Decorator
 {
+    /**
+     * 主题装饰类
+     *
+     * @param string $originalText 初始文本
+     * @return mixed
+     */
     public function decorate($originalText)
     {
         $replacement = preg_replace('/(.{70})/u', "$1" . PHP_EOL, $originalText);
@@ -18,6 +30,13 @@ class Frame extends Decorator
         return $this->drawFrame($wraps, $col);
     }
 
+    /**
+     * 绘制边框
+     *
+     * @param array $wraps
+     * @param string $col
+     * @return string
+     */
     protected function drawFrame($wraps, $col)
     {
         $frame = [];
