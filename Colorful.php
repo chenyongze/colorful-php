@@ -1,7 +1,6 @@
 <?php
 namespace colorful;
 
-include_once __DIR__ . DIRECTORY_SEPARATOR . 'Decorator.php';
 /**
  * Class Colorful
  * @package Style

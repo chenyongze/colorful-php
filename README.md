@@ -14,12 +14,14 @@ Let's console to be Colorful~:satisfied:
 
 _ _ _
 ```php
+
+// 基础主题
 Colorful::apply('Hi~ Success', 'success');
 Colorful::apply('PHP Warning: file_get_contents failed to open stream: no suitable wrapper could be found.', 'warn');
 Colorful::apply('PHP Fatal error: Call to undefined function mb_detect_encoding() ', 'fatal');
 Colorful::apply('https://github.com/yinggaozhen/colorful-php', 'hyperlink');
 
-// 渲染装饰类
+// 装饰主题
 $longtext = "message\n\n    The exception message\ncode\n\n    The exception code\nfile\n\n    The filename where the exception was created\nline\n\n    The line where the exception was created";
 $frame = new \colorful\decorator\Frame([
     'spec' => '',
