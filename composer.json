@@ -26,7 +26,7 @@
     "autoload": {
         "psr-4": {
             "colorful\\": "./",
-            "colorful\\decorator":"./decorator"
+            "colorful\\decorator\\":"./decorator"
         }
     }
 }
