@@ -31,10 +31,10 @@ _ _ _
 ![stdoutput](./docs/colorful.png)
 
 ### Theme List
-| Theme List | Params |
-|--------|--------|
-|  success      |    /    |
-|  warn      |    /    |
-|  fatal      |    /    |
-|  hyperlink      |    /    |
-|  frame      |    `['decorate' => 装饰符,默认*, 'spec' => 占位符,默认为'']`      |
+| Theme List | Type | Params |
+|--------|--------|--------|
+|  success      |    Base    |    /    |
+|  warn      |    Base    |    /    |
+|  fatal      |    Base    |    /    |
+|  hyperlink  |    Base    |    /    |
+|  frame      |    ```Decoretor```    |    ```php ['decorate' => 装饰符,默认*, 'spec' => 占位符,默认为'']```      |
