@@ -8,6 +8,9 @@
 ## Application
 Let's console to be Colorful~:satisfied:
 
+## Install
+> composer require yinggaozhen/colorful-php
+
 ## Usage
 > 大体用法是通过Cololrful::apply传入要渲染的文本以及主题，其中主题包括内置基础主题和内置高级主题(可通过参数进一步调节).当然也可以通过Cololrful::import导入主题.
 

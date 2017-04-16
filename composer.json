@@ -2,6 +2,7 @@
     "name": "yinggaozhen/colorful-php",
     "description": "Let's console to be colorful",
     "type": "zaor-tool",
+    "minimum-stability": "dev",
     "homepage": "https://github.com/yinggaozhen/colorful-php",
     "authors": [
         {
