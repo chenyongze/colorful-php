@@ -22,13 +22,13 @@ class Frame extends Decorator
     {
         $frame = [];
 
-        $decorator = $this->params['decorate'] !== null ? $this->params['decorate'] : '*';
-        $frame[] = str_repeat($decorator, $col);
+        $decorate = $this->params['decorate'] !== null ? $this->params['decorate'] : '*';
+        $frame[] = str_repeat($decorate, $col);
         foreach ($wraps as $wrap) {
             $spec = str_repeat($this->params['spec'] ?: '', ($col - mb_strlen($wrap)) / 2);
             $frame[] = "{$spec}{$wrap}{$spec}";
         }
-        $frame[] = str_repeat($decorator, $col);
+        $frame[] = str_repeat($decorate, $col);
 
         return implode($frame, PHP_EOL);
     }

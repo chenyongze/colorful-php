@@ -10,7 +10,7 @@ Let's console to be Colorful~:satisfied:
 > composer require yinggaozhen/colorful-php dev-master
 
 ## Usage
-> 大体用法是通过Cololrful::apply传入要渲染的文本以及主题，其中主题包括内置基础主题和内置高级主题(可通过参数进一步调节).当然也可以通过Cololrful::import导入主题.
+> 大体用法是通过Cololrful::apply传入要渲染的文本以及主题，其中主题包括内置基础主题和装饰主题(可通过参数进一步调节).当然也可以通过Cololrful::import导入主题.
 
 _ _ _
 ```php
@@ -19,7 +19,7 @@ Colorful::apply('PHP Warning: file_get_contents failed to open stream: no suitab
 Colorful::apply('PHP Fatal error: Call to undefined function mb_detect_encoding() ', 'fatal');
 Colorful::apply('https://github.com/yinggaozhen/colorful-php', 'hyperlink');
 
-// 装饰
+// 渲染装饰类
 $longtext = "message\n\n    The exception message\ncode\n\n    The exception code\nfile\n\n    The filename where the exception was created\nline\n\n    The line where the exception was created";
 $frame = new \colorful\decorator\Frame([
     'spec' => '',
@@ -37,3 +37,4 @@ _ _ _
 |  warn      |    /    |
 |  fatal      |    /    |
 |  hyperlink      |    /    |
+|  frame      |    `['decorate' => 装饰符,默认*, 'spec' => 占位符,默认为'']`      |
