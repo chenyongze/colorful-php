@@ -1,5 +1,5 @@
 <?php
-namespace Style;
+namespace colorful;
 
 /**
  * Class Colorful
@@ -135,10 +135,11 @@ class Colorful
     /**
      * @param string $text
      * @param string $theme
+     * @param Decorator $decorator
      * @return string
      * @throws \Exception
      */
-    public static function apply($text, $theme)
+    public static function apply($text, $theme, Decorator $decorator = null)
     {
         $setCodes   = [];
         $unsetCodes = [];

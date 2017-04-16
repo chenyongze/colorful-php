@@ -20,7 +20,7 @@ Colorful::apply('PHP Fatal error: Call to undefined function mb_detect_encoding(
 Colorful::apply('https://github.com/yinggaozhen/colorful-php', 'hyperlink');
 ```
 _ _ _
-![stdoutput](colorful.png)
+![stdoutput](./docs/colorful.png)
 
 ### Theme List
 | Theme List | Params |
