@@ -13,10 +13,10 @@ Let's console to be Colorful~:satisfied:
 
 _ _ _
 ```php
-echo Colorful::apply('Hi~ Success', 'success') . PHP_EOL;
-echo Colorful::apply('PHP Warning: file_get_contents failed to open stream: no suitable wrapper could be found.', 'warn') . PHP_EOL;
-echo Colorful::apply('PHP Fatal error: Call to undefined function mb_detect_encoding() ', 'fatal') . PHP_EOL;
-echo Colorful::apply('https://github.com/yinggaozhen/colorful-php', 'hyperlink') . PHP_EOL;
+Colorful::apply('Hi~ Success', 'success');
+Colorful::apply('PHP Warning: file_get_contents failed to open stream: no suitable wrapper could be found.', 'warn');
+Colorful::apply('PHP Fatal error: Call to undefined function mb_detect_encoding() ', 'fatal');
+Colorful::apply('https://github.com/yinggaozhen/colorful-php', 'hyperlink');
 ```
 _ _ _
 ![stdoutput](colorful.png)

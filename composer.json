@@ -1,0 +1,30 @@
+{
+    "name": "yinggaozhen/colorful-php",
+    "description": "Let's console to be colorful",
+    "type": "zaor-tool",
+    "homepage": "https://github.com/yinggaozhen/colorful-php",
+    "authors": [
+        {
+            "name": "yinggaozhen",
+            "email": "yinggaozhen@58ganji.com"
+        }
+    ],
+    "require": {
+        "yinggaozhen/colorful-php": "@dev"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        },
+        "colorful-php": {
+            "type": "git",
+            "url": "git@github.com:yinggaozhen/colorful-php.git"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Style\\": "./"
+        }
+    }
+}
