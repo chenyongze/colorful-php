@@ -1,6 +1,7 @@
 <?php
 namespace colorful;
 
+include_once __DIR__ . DIRECTORY_SEPARATOR . 'Decorator.php';
 /**
  * Class Colorful
  * @package Style
@@ -165,6 +166,10 @@ class Colorful
             return $text;
         }
 
+        if ($decorator !== null) {
+            $decoratorText = $decorator->decorate($text);
+            return sprintf("\033[%sm%s\033[%sm", implode(';', $setCodes), $decoratorText, implode(';', $unsetCodes));
+        }
         return sprintf("\033[%sm%s\033[%sm", implode(';', $setCodes), $text, implode(';', $unsetCodes));
     }
 
@@ -176,8 +181,3 @@ class Colorful
         static::$availableTheme = static::$availableTheme + $themes;
     }
 }
-
-echo Colorful::apply('Hi~ Success', 'success') . PHP_EOL;
-echo Colorful::apply('PHP Warning: file_get_contents failed to open stream: no suitable wrapper could be found.', 'warn') . PHP_EOL;
-echo Colorful::apply('PHP Fatal error: Call to undefined function mb_detect_encoding() ', 'fatal') . PHP_EOL;
-echo Colorful::apply('https://github.com/yinggaozhen/colorful-php', 'hyperlink') . PHP_EOL;
