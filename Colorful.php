@@ -5,8 +5,8 @@ include_once __DIR__ . DIRECTORY_SEPARATOR . 'Decorator.php';
 
 /**
  * Class Colorful
- * @package Style
  *
+ * @package Style
  * @example :
  * Colorful::apply('Hi~ Success', 'success');
  * Colorful::apply('PHP Warning: file_get_contents failed to open stream: no suitable wrapper could be found.', 'warn');
@@ -16,7 +16,6 @@ include_once __DIR__ . DIRECTORY_SEPARATOR . 'Decorator.php';
  */
 class Colorful
 {
-
     private static $availableForegroundColors = [
         'black'   => ['set' => 30, 'unset' => 39],
         'red'     => ['set' => 31, 'unset' => 39],
@@ -147,6 +146,7 @@ class Colorful
         $unsetCodes = [];
 
         list($availableForeground, $availableBackground, $availableOptions) = is_array($theme) ? $theme : self::getTheme($theme);
+
         if ($foreground = static::getForeground($availableForeground)) {
             $setCodes[]   = $foreground['set'];
             $unsetCodes[] = $foreground['unset'];
@@ -155,7 +155,6 @@ class Colorful
             $setCodes[]   = $background['set'];
             $unsetCodes[] = $background['unset'];
         }
-
         if ($options = static::getOptions($availableOptions)) {
             foreach ($options as $option) {
                 $setCodes[]   = $option['set'];

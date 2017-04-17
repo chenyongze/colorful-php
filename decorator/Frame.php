@@ -5,8 +5,8 @@ use colorful\Decorator;
 
 /**
  * <边框>装饰主题
- *
  * Class Frame
+ *
  * @package colorful\decorator
  */
 class Frame extends Decorator
