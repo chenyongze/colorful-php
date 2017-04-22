@@ -10,19 +10,6 @@
             "email": "yinggaozhen@58ganji.com"
         }
     ],
-    "require": {
-        "yinggaozhen/colorful-php": "@dev"
-    },
-    "repositories": {
-        "packagist": {
-            "type": "composer",
-            "url": "https://packagist.phpcomposer.com"
-        },
-        "colorful-php": {
-            "type": "git",
-            "url": "git@github.com:yinggaozhen/colorful-php.git"
-        }
-    },
     "autoload": {
         "psr-4": {
             "colorful\\": "./",
